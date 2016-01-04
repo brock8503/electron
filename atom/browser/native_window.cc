@@ -213,7 +213,7 @@ void NativeWindow::InitFromOptions(const mate::Dictionary& options) {
   if (options.Get(switches::kKiosk, &kiosk) && kiosk) {
     SetKiosk(kiosk);
   }
-  std::string title("Electron");
+  std::string title("Electron WTF");
   options.Get(switches::kTitle, &title);
   SetTitle(title);
 
