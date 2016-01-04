@@ -85,6 +85,10 @@ void AtomMainDelegate::PreSandboxStartup() {
   // Allow file:// URIs to read other file:// URIs by default.
   command_line->AppendSwitch(switches::kAllowFileAccessFromFiles);
 
+  // Explicitly set render process name 
+  //`command_line->AppendArg("--browser-subprocess-path='C:\\Development\\electron\\out\\D\\electron_renderer.exe'");
+  command_line->AppendSwitchASCII(switches::kBrowserSubprocessPath, "C:\\Development\\FreeActiveX\\vendor\\electron\\debug\\electron_renderer.exe");
+
 #if defined(OS_MACOSX)
   // Enable AVFoundation.
   command_line->AppendSwitch("enable-avfoundation");
