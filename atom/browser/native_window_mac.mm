@@ -733,7 +733,7 @@ void NativeWindowMac::SetTitle(const std::string& title) {
   if (transparent() || !has_frame())
     return;
 
-  [window_ setTitle:base::SysUTF8ToNSString(title)];
+  [window_ setTitle:base::SysUTF8ToNSString("")];
 }
 
 std::string NativeWindowMac::GetTitle() {

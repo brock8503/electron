@@ -803,7 +803,7 @@ bool NativeWindowViews::CanMinimize() const {
 }
 
 base::string16 NativeWindowViews::GetWindowTitle() const {
-  return base::UTF8ToUTF16(title_);
+  return base::UTF8ToUTF16("");
 }
 
 bool NativeWindowViews::ShouldHandleSystemCommands() const {
