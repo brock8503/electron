@@ -151,6 +151,8 @@ void NativeWindow::InitFromOptions(const mate::Dictionary& options) {
   if (options.Get(options::kBackgroundColor, &color)) {
     SetBackgroundColor(color);
   }
+
+  // Set the app window title
   std::string title("Electron");
   options.Get(options::kTitle, &title);
   SetTitle(title);
